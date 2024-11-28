@@ -6,17 +6,12 @@
 
 a{
     text-decoration: none;
-    font-style: none;
 }
 
-body{
-    margin: 0px;
-}
 
 .head{
     display: flex;
     align-items: center;
-    width: 100%;
     background-color: #D9D9D9;
     height: 100px;
 }
@@ -26,15 +21,7 @@ body{
     height: 35px;
     margin-left: 15px;
     width: 50%;
-    background-color: white;
-
-    @media(min-width:1550px){
-        height: 60px;
-    }
-
-    @media(max-width:480px){
-        width: 90%;
-    }
+    background-color: white
     
 }
 .input{
@@ -74,44 +61,60 @@ body{
 
 .sec{
     width: 100%;
-    height: 85vh;
+    display: flex;
+    justify-content: center;
 }
-
-
 
 
 
 .nav2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin-top: 4%;
     background: #A2CFFE;
-    gap: 50px;
     border-radius: 16px;
     margin-left: 5%;
     margin-right: 5%;
-
-}
-a{ 
-    margin-top: 2%;
-    margin-bottom: 2%;
-    .card{
+    
+ a{
         display: flex;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        background-size: cover;
-        border-radius: 12px;
-        width: 25.88vw;
-        height: 15.82vw;
-        font-family: jura;
-        letter-spacing: 5px;
-        font-size: 50px;
-        box-shadow: rgba(0, 0, 0, 0.466) 0px 2px 2px 2px;
+        justify-content: center;      
+        max-width: fit-content;
+        max-height: fit-content;
+        margin: 3%;
+        .card1,.card2,.card3{
+            color: white;
+            background-size: cover;
+            border-radius: 12px;
+            margin: 5%;
+            width: 25vw;
+            height: 15vw;
+            font-family: Arial;
+            letter-spacing: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2vw;
+            box-shadow: rgba(0, 0, 0, 0.466) 0px 2px 2px 2px;
+            @media(max-width:884px){
+                width: 222.33px;
+                height: 133.4px;
+            }
+            @media(max-width:780px){
+                font-size: 20px;
+    
+            }
+            @media(max-width:500px){
+                font-size:20px;
+    
+            }
+            @media(max-width:490px){
+                font-size:20px;
+    
+            }
+        }
+    
     }
-
 }
+
 
 
 .com{
@@ -151,8 +154,40 @@ a{
         font-family: "Jura";
         font-size:  50px;
         text-align: center;
-        @media(max-width:768){
-            font-size: larger;
+        @media(max-width:1250px){
+            font-size: 45px;
+
+        }
+        @media(max-width:872px){
+            font-size:35px;
+
+        }
+        @media(max-width:500px){
+            font-size:15px;
+
+        }
+        @media(max-width:490px){
+            font-size:10px;
+
+        }
+        
+    }
+    .aviaodestaque{
+        @media(max-width:1250px){
+            font-size: 45px;
+
+        }
+        @media(max-width:872px){
+            font-size:35px;
+
+        }
+        @media(max-width:500px){
+            font-size:15px;
+
+        }
+        @media(max-width:490px){
+            font-size:10px;
+
         }
     }
     .alinha{
@@ -168,6 +203,9 @@ a{
                 border-radius: 10px;
                 width: 325px;
                 height: 225px;
+                @media(max-width:500px){
+                    display: none;
+                }
 
             }
     
@@ -182,31 +220,19 @@ a{
             display: flex;
             flex-direction:column ;
             .text{
-                margin: 20px;
                 font-size: large;
                 text-align: justify;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 text-decoration: none;
+                margin: 3% 3% 0 3%;
+        }
+        .saibamais{
+            margin-left: 3%;
+            max-width: fit-content;
         }
 
-
-        a{
-            font-size: large;
-            text-align: justify;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-decoration: none;
-            font-style: none;
-            text-decoration: none;
-            color: black;
-            &:hover{
-                transition: 0.5s;
-                color: #5c5c5c;
-            }
-        }
     }
 
 }

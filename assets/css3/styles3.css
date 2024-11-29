@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap");
 * {
   margin: 0;
@@ -22,9 +21,9 @@ header {
 }
 
 .Pesq {
+  margin-left: 40px;
   display: flex;
   align-items: center;
-  margin-left: 25px;
   height: 50px;
   width: 75%;
   background-color: white;
@@ -78,22 +77,28 @@ input {
 }
 
 .conteudo {
-  margin-top: 90px;
+  margin-top: 130px;
   display: flex;
   flex-direction: column;
 }
 .conteudo h1 {
+  text-align: center;
   display: flex;
   justify-content: center;
   font-size: 500%;
 }
+@media (max-width: 920px) {
+  .conteudo h1 {
+    font-size: 250%;
+  }
+}
 .conteudo .txt {
   padding: 15px;
   border-radius: 10px;
-  margin-top: 70px;
+  margin-top: 130px;
   background-color: #d9d9d9;
-  margin-left: 25%;
-  margin-right: 25%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 .conteudo .txt p {
   line-height: 1.8;
@@ -104,6 +109,11 @@ input {
   margin-left: 10px;
   margin-right: 10px;
   padding: 2px;
+}
+@media (max-width: 920px) {
+  .conteudo .txt p {
+    font-size: large;
+  }
 }
 
 footer {
@@ -151,7 +161,7 @@ footer button:hover {
   display: flex;
   border-radius: 15px;
   height: 35px;
-  margin-left: 15px;
+  margin-left: 5%;
   width: 50%;
   background-color: white;
 }
@@ -270,60 +280,6 @@ nav a {
   text-decoration: none;
   color: white;
   font-size: xx-large;
-}
-
-.onetotwo {
-  display: flex;
-  justify-content: end;
-}
-
-.modal {
-  display: none; /* Esconde o modal por padrão */
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-}
-
-.modal-content {
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  max-width: 700px;
-  width: 80%;
-  -o-object-fit: contain;
-     object-fit: contain;
-  justify-content: center;
-  align-items: center;
-}
-.modal-content img {
-  width: 120%;
-  height: 120%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 20px;
-  font-weight: bold;
-  cursor: pointer;
-  color: #555;
-}
-
-.close:hover {
-  color: #000;
 }
 
 .mlat {
